@@ -8,6 +8,11 @@ a:hover, a:focus{
   text-decoration: none;
 }
 
+dd {
+  padding-bottom: 15px;
+}
+
+
 /* top nav and header */
 #navbar{
   margin-top: 0;
@@ -68,7 +73,7 @@ ul.nice-menu-down .menuparent a {
 
 /* base theme-specific layout */
 #main-content-wrapper{
-  padding: 10px 0;
+  padding: 10px 0 50px;
   margin-top: 20px;
   background: url('/sites/all/themes/galecia/images/galback_0704.jpg') -100px -700px repeat-x #f3f3f3;
 }
@@ -79,6 +84,7 @@ ul.nice-menu-down .menuparent a {
   padding: 40px 50px;
   background-color: #fff;
   margin-top: 7px;
+  min-height: 700px;
 }
 
 
@@ -255,16 +261,28 @@ ul.nice-menu-down .menuparent a {
 .blog-posts-page .blog-posts-list li a.label-default[href]:focus{
   background-color: #808080;
 }
-.blog-posts-page .blog-post-tags {
+.blog-post-tags {
   margin-top: 10px;
+}
+.blog-post-tags .label {
+  margin: 0 3px 3px 0;
+  display: inline-block;
 }
 .pane-blogs li a.label .fa, 
 .blog-posts-page .blog-posts-list li a.label .fa {
-  color: #7CA9C5;
+  color: #FBFAC5;
 }
 .pane-blogs .more-link{
   margin: 0 20px;
 }
+
+/* projects page */
+.project-summary {
+  display: block;
+  margin: 15px 0 0;
+}
+
+/* front pge slider and spotlights */
 #block-views-spotlights-block{
   padding: 20px 0 0
 }
@@ -311,6 +329,7 @@ ul.nice-menu-down .menuparent a {
 .container-quote:before {
   border-top: 20px solid #fff;
 }
+/*
 .container-quote:before {
   content: ' ';
   position: absolute;
@@ -326,6 +345,8 @@ ul.nice-menu-down .menuparent a {
   border-right: 0 solid transparent;
   border-top: 25px solid #fff;
 }
+*/
+
 .container-quote .views-field-view-node{
   float: right;
   margin-top: -17px;
@@ -388,12 +409,16 @@ ul.nice-menu-down .menuparent a {
 #footer_wrapper{
   background: #527190;
   color: #e4e4e4;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 #footer_wrapper .footer-news-block h2{
   text-align: center;
   font-size: 17px;
   color: #fff;
   margin-top: 60px;
+  font-weight: bold;
 }
 #footer_wrapper #block-blog-recent ul{
   list-style: none;
@@ -445,6 +470,7 @@ ul.nice-menu-down .menuparent a {
 }
 .media .media-heading{
   margin-bottom: 10px;
+  font-weight: 400;
 }
 .focus-projects h3.panel-title{
   font-size: 20px;
