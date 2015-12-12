@@ -27,7 +27,7 @@ dd {
   background-color: #fff;
   border-color: #fff;
   margin-bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 #navbar .menu{
   float: right;
@@ -52,6 +52,12 @@ dd {
 }
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
   background-color: #49B2D4;
+}
+.region-navigation #block-search-form {
+  max-width: 400px;
+  margin-left: 100px;
+  margin-top: 25px;
+  padding-right: 23px;
 }
 .breadcrumb {
   font-size: 14px;
@@ -424,6 +430,28 @@ dd {
 .project-specs {
   font-weight: bold;
 }
+#right-sidebar .project-tags {
+  margin-left: 48px;
+}
+
+/* individual project pages */
+.field-name-field-files .file a {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 
 /* front pge slider and spotlights */
 #block-views-spotlights-block{
@@ -431,6 +459,7 @@ dd {
 }
 #slider1_container{
   background: transparent;
+  max-width: 960px;
 }
 #slider1_container .item{
   padding: 0 9%;
@@ -494,10 +523,11 @@ dd {
   float: right;
   margin-top: -17px;
   margin-right: -24px;
+  padding: 6px 12px;
 }
 .container-quote .views-field-view-node a{
   color: #fff;
-  font-size: 17px !important;
+  font-size: 14px !important;
 }
 .admin-menu .container-quote .views-field-view-node .btn-sm {
   padding: 3px 10px;
@@ -529,9 +559,13 @@ dd {
   background: #fff !important;
   opacity: 1 !important;
 }
+.owl-theme .owl-controls .owl-page span ,
+.owl-theme .owl-controls .owl-buttons div {
+  background-color: #555 !important;
+}
 .owl-theme .owl-controls .owl-page.active span, 
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background-color: #F2F13E !important;
+  background-color: #00526e !important;
 }
 #two-col-page .panel-panel.left{
   min-height: 400px;
@@ -546,6 +580,13 @@ dd {
 }
 .pinterest-block.related-content-block{
   margin-top: 30px;
+  margin-left: 31px;
+}
+.pinterest-block.related-content-block .pane-content {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 323px;
 }
 
 /* footer */
@@ -630,6 +671,10 @@ dd {
   margin-bottom: 20px;
   font-weight: 400;
 }
+#focus-area-page .media {
+  max-width: 900px;
+  margin-right: 20px;
+}
 .focus-projects h3.panel-title{
   font-size: 20px;
   color: #333;
@@ -676,7 +721,42 @@ dd {
   max-width: 400px;
 }
 
+/* search */
+#main-container #search-form {
+  max-width: 865px;
+}
+.search-results h2 {
+  display:  none;
+}
+.search-results {
+  max-width: 900px;
+}
+.search-results h3 {
+  font-size: 18px;
+}
+.search-results .search-snippet-info {
+  font-size: 14px;
+}
+
 /*Responsiveness*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1470px;
+  }
+}
+
+
+
 @media (max-width: 767px) {
   #node-170{
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
