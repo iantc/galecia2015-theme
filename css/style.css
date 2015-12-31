@@ -261,7 +261,6 @@ dd {
   background-color: #F8FAFC;
 }
 .presentation-item-wrapper{
-  max-width: 800px;
 }
 .pane-blogs li .post-date,
 .blog-posts-page .blog-posts-list li .post-date {
@@ -307,6 +306,18 @@ dd {
 .pane-blogs .more-link{
   margin: 0 20px;
 }
+
+/* node edit menu */
+.logged-in.admin-menu #main-container .tabs--primary .view-link {
+  display: none;
+}
+.logged-in.node-edit #main-container .tabs--primary .view-link {
+  display: block;
+}
+.pane-node-form-buttons {
+  padding-top: 20px;
+}
+
 
 /* exposed filters */
 #edit-sort-bef-combine-wrapper {
@@ -452,6 +463,25 @@ dd {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+/* presentation pages */
+.pane-node-field-thumbnail img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 0px;
+  transition: all 0.2s ease-in-out 0s;
+  width: 100%;
+}
+#presentation-materials-panel{
+  padding-right: 0;
+  padding-left: 0;
+}
+
 
 /* front pge slider and spotlights */
 #block-views-spotlights-block{
@@ -658,6 +688,19 @@ dd {
 .view-content-by-focus-area .views-field-title .row {
   padding-bottom: 10px;
 }
+.focus-page-img {
+  max-width: 140px;
+  max-height: 140px;
+}
+.focus-area-table .views-field-title {
+  width: 82%;
+}
+.focus-area-table .views-field-field-date {
+  width: 18%;
+}
+.Project-end-date .date-display-single {
+  display: none;
+}
 
 /*About*/
 
@@ -665,7 +708,6 @@ dd {
 /*Projects list */
 .media{
   margin: 15px 15px 35px !important;
-  max-width: 600px;
 }
 .media .media-heading{
   margin-bottom: 20px;

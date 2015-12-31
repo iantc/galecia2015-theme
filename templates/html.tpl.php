@@ -65,10 +65,11 @@
     jQuery(document).ready(function(){
       jQuery('.dropdown-toggle').dropdownHover();
       jQuery("#spotlight-carousel").owlCarousel({
-        navigation: false,
+        navigation: true,
         autoPlay: true,
         stopOnHover: true,
-        items: 1
+        paginationNumbers: true,
+        singleItem: true
       });
       jQuery(".panel-info .pane-title").addClass("panel-heading");
       jQuery(".panel-info .pane-content").addClass("panel-body");
@@ -79,6 +80,8 @@
       jQuery("#block-views-exp-presentations-page .block-title").prepend('<i class="fa fa-search"></i> ');
       jQuery("#block-views-exp-projects-page .block-title").prepend('<i class="fa fa-search"></i> ');
       jQuery("#block-views-exp-blogs-page .block-title").prepend('<i class="fa fa-search"></i> ');
+      jQuery(".presentation-material-link a").text('');
+      jQuery(".presentation-img").prependTo(".presentation-material-link a")
     });
   </script>
 </head>
